@@ -74,54 +74,6 @@ PM_START_TEX = """
 """
 
 
-PM_START_TEXT = """ 
-
-👀𝐇𝐞𝐲 {} , [🖤]({})
-
-╔══❰🌺𝐖𝐄𝐋𝐂𝐎𝐌𝐄🌺❱═══❍⊱❁۪۪
-║
-║┣⪼ 𝗕𝗢𝗧 𝗡𝗔𝗠𝗘 : [𝗕𝗥𝗔𝗡𝗗𝗘𝗗 𝗥𝗢𝗕𝗢𝗧](https://t.me/BRANDRD_ROBOT)
-║
-║┣⪼ 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 : [𝗕𝗥𝗔𝗡𝗗𝗘𝗗 𝗕𝗢𝗧](https://t.me/BRANDRD_BOT)
-║ 
-║┣⪼ 𝗛𝗘𝗥𝗨𝗞𝗢 𝗖𝗖 : [𝗕𝗥𝗔𝗡𝗗𝗘𝗗 𝗖𝗖](https://t.me/BRANDED_PAID_CC)
-║ 
-║┣⪼ 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗖𝗛𝗔𝗧 : [𝗕𝗥𝗔𝗡𝗗𝗘𝗗 𝗖𝗛𝗔𝗧](https://t.me/BRANDED_WORLD)
-║ 
-╚═════════════════❍⊱❁۪۪
-   
-        
-╔════════ஜ۩۞۩ஜ════════╗
-
-[𝗠𝗔𝗗𝗘 𝗕𝗬 𝗕𝗥𝗔𝗡𝗗𝗘𝗗 𓆩🇽𓆪 𝗞𝗜𝗡𝗚](https://t.me/BRANDEDKING8)
-    
-╚════════ஜ۩۞۩ஜ════════╝
-
-ɪ ᴀᴍ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴅ sᴜᴘᴇʀғᴀsᴛ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ᴠᴄ ᴘʟᴀʏᴇʀ ᴡɪᴛʜ 24x7 ᴀᴄᴛɪᴠᴇ » ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴɴᴇʟ
-
-ғᴇᴇʟ ʟᴀɢ ғʀᴇᴇ ᴛᴏ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ sᴜᴘᴇʀ ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴍᴀɴᴀɢɪɴɢ-ɢʀᴏᴜᴘ &  ᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴀɴᴅ ᴠɪᴅᴇᴏ
-
-"""
-
-buttons = [
-    [
-        InlineKeyboardButton(
-            text="☆ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆",
-            url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="⛦  ʜᴇʟᴘ ⛦", callback_data="help_back"),
-        InlineKeyboardButton(text="⛦  ᴍᴜꜱɪᴄ ⛦", callback_data="Music_"),
-    ],
-    [
-        InlineKeyboardButton(text="⛦ ɢʀᴏᴜᴘ ⛦", url=f"https://t.me/BRANDED_PAID_CC"),
-        InlineKeyboardButton(text="⛦ ᴄʜᴀɴɴᴇʟ ⛦", url=f"https://t.me/BRANDRD_BOT"),
-    ],
-    [   
-        InlineKeyboardButton(text="⛦ ʙʀᴀɴᴅᴇᴅ ʀᴇᴘᴏ ⛦", url=f"https://t.me/BRANDED_WORLD"),
-    ],
-]
 
 HELP_STRINGS = f"""
 » *{BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ*"""
@@ -141,6 +93,35 @@ DATA_EXPORT = []
 CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
+PM_START_TEXT = """
+
+[ㅤ]({})
+**ʜᴇʏ {} 🥀**
+
+**🤖 ɪ ᴀᴍ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.**
+**🛡️ ɪ ʜᴇʟᴘ ʏᴏᴜ ᴘʀᴏᴛᴇᴄᴛ, ᴍᴀɴᴀɢᴇ ᴀɴᴅ ᴄᴏɴᴛʀᴏʟ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇᴀꜱᴇ.**
+
+━━━━━━━━━━━━━━━━━━
+
+**✨ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ ᴘʀᴇᴍɪᴜᴍ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ.**
+"""
+
+buttons = [
+    [
+        InlineKeyboardButton(
+            text="☆ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆",
+            url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="⛦ ʜᴇʟᴘ ⛦", callback_data="help_back"),
+        InlineKeyboardButton(text="⛦ ᴍᴜꜱɪᴄ ⛦", callback_data="Music_"),
+    ],
+    [
+        InlineKeyboardButton(text="⛦ ɢʀᴏᴜᴘ ⛦", url="https://t.me/BRANDED_PAID_CC"),
+        InlineKeyboardButton(text="⛦ ᴄʜᴀɴɴᴇʟ ⛦", url="https://t.me/BRANDRD_BOT"),
+    ],
+    ]
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("MukeshRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
