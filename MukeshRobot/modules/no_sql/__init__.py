@@ -1,45 +1,45 @@
-from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 from pymongo import MongoClient, collection
+from pymongo.errors import PyMongoError
+
 from MukeshRobot.modules.no_sql.users_db import *
 from MukeshRobot.modules.no_sql.chats_db import *
 from MukeshRobot.modules.no_sql.gban_db import *
-from MukeshRobot import  MONGO_DB_URI
 
-mongo = MongoCli(MONGO_DB_URI)
-Mukeshdb = mongo.MUK_ROB
+from MukeshRobot import MONGO_DB_URI
 
+
+# Mongo Client
 try:
     client = MongoClient(MONGO_DB_URI)
-except PyMongoError:
-    exiter(1)
+except PyMongoError as e:
+    print(f"[MongoDB Error] {e}")
+    raise SystemExit(1)
+
+# Main Database
 main_db = client["MUKESH_ROBOT"]
-
-
 MukeshXdb = main_db
 
 
-def get_collection(name: str) -> collection:
-    """ɢᴇᴛ ᴛʜᴇ ᴄᴏʟʟᴇᴄᴛɪᴏɴ ғʀᴏᴍ ᴅᴀᴛᴀʙᴀsᴇ."""
+def get_collection(name: str) -> collection.Collection:
+    """Get collection from database."""
     return MukeshXdb[name]
 
 
 class MongoDB:
     """Class for interacting with Bot database."""
 
-    def __init__(self, collection) -> None:
-        self.collection = MukeshXdb[collection]
+    def __init__(self, collection_name) -> None:
+        self.collection = MukeshXdb[collection_name]
 
     # Insert one entry into collection
     def insert_one(self, document):
         result = self.collection.insert_one(document)
-        return repr(result.inserted_id)
+        return str(result.inserted_id)
 
     # Find one entry from collection
     def find_one(self, query):
         result = self.collection.find_one(query)
-        if result:
-            return result
-        return False
+        return result if result else False
 
     # Find entries from collection
     def find_all(self, query=None):
@@ -61,6 +61,8 @@ class MongoDB:
     # Replace one entry in collection
     def replace(self, query, new_data):
         old = self.collection.find_one(query)
+        if not old:
+            return None, None
         _id = old["_id"]
         self.collection.replace_one({"_id": _id}, new_data)
         new = self.collection.find_one({"_id": _id})
